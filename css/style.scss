@@ -1,0 +1,396 @@
+$brand: #e7ab3d;
+$black:#333333;
+
+.bg-brand {
+    background-color: $brand;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.text-brand {
+    color: $brand;
+}
+
+/*----Custom----*/
+.telephone .textwidget {
+    display: flex;
+}
+
+.telephone .icon {
+    padding: 20px;
+}
+
+.telephone .number {
+    padding: 0 1rem;
+    background-color: black;
+    color: #fff;
+    line-height: 60px;
+}
+
+.full-img {
+    img {
+        width: 100%;
+    }
+}
+
+.slider {
+    top: 0;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.sliderText .title::before {
+    background-color: $brand;
+    content: " ";
+    display: block;
+    border: none !important;
+    width: 12rem;
+    height: 12rem;
+    margin: 0 !important;
+    line-height: 1;
+    position: relative;
+    top: 1.7em;
+    left: -1.2em;
+    z-index: -1;
+}
+
+.slider .post-thumbnail {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+}
+
+.slider .sliderText {
+    top: 20%;
+    position: absolute;
+    color: #fff;
+    margin: 0 4rem;
+    width: 40%;
+    min-height: 500px;
+}
+
+.slider .sliderText .title {
+    font-size: 4.625rem;
+    font-weight: 700;
+    position: relative;
+    line-height: 4rem;
+    z-index: 1;
+
+}
+
+.slider .sliderText .textwidget {
+    position: relative;
+    z-index: 1;
+    font-size: 1.5625rem
+}
+
+
+
+.indicator .box {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+.indicator {
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+}
+
+.indicator .box.selected {
+    background-color: $brand;
+}
+
+
+.content {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+
+
+.main-navigation a:hover:before,
+.main-navigation .current-menu-item a:before {
+    width: 100%;
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.main-navigation a:before {
+    content: " ";
+    display: block;
+    height: 2px;
+    width: 0;
+    -webkit-box-shadow: 0 0 0 2px $brand inset;
+    box-shadow: 0 0 0 2px $brand inset;
+    bottom: 20%;
+    -webkit-transition: 250ms cubic-bezier(.15, .75, .5, 1);
+    -moz-transition: 250ms cubic-bezier(.15, .75, .5, 1);
+    transition: 250ms cubic-bezier(.15, .75, .5, 1);
+    position: absolute;
+    opacity: 0;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
+}
+
+
+.brand-bg {
+    background-color: $brand;
+    color: #fff;
+}
+
+.white-bg {
+    background-color: #ffffff;
+}
+
+.top-25 {
+    margin-top: -25px;
+}
+
+.icon-square {
+    width: 120px;
+    height: 120px;
+    font-size: 3.75em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pos-rel-2 {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon-right {
+    position: absolute;
+    right: 0;
+
+}
+
+.main-title {
+    color: $brand;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 1.5em;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.right-img {
+    margin-left: -120px;
+    margin-top: -120px;
+    position: relative;
+    z-index: 1;
+}
+
+.left-bottom-gap {
+    margin-left: -120px;
+    margin-top: 120px;
+    position: relative;
+    z-index: 1;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.row {
+    display: flex;
+
+    .right-align {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .col {
+        flex: 1;
+        margin-right: 2rem;
+
+        &:last-child {
+            margin-right: 0rem;
+        }
+    }
+
+    .top-p {
+        padding-top: 12rem;
+        padding-right: 5rem;
+    }
+
+    .top-p1 {
+        padding-top: 12rem;
+        padding-right: 12rem;
+    }
+
+    .inner-content {
+        max-width: 700px;
+        width: 100%;
+    }
+
+    .content-h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+        font-weight: bold;
+    }
+
+    .button {
+        font-size: 1.0625em;
+        background-color: $brand;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 1.4em 1.7em;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .top-space {
+        margin-top: 3.75rem;
+    }
+}
+
+.space {
+    height: 5rem;
+}
+.text-center{
+    text-align: center;
+    margin: 0 auto;
+}
+.gap-0 .col {
+    margin-right: 0rem;
+}
+
+.img2 {
+    background-image: url('../image/brand-bg.png');
+}
+
+.text-black {
+    color: $black;
+}
+
+.card {
+    .img img {
+        width: 100%
+    }
+
+    .body {
+        background-color: #eff3f4;
+        padding: 2rem;
+
+        .title {
+            a {
+                font-weight: bold;
+                font-size: 1.2rem;
+                color: $black;
+            }
+
+            margin-bottom: 1rem;
+        }
+    }
+
+    .icon-panel {
+        display: flex;
+        margin-top: -67px;
+
+        .icon {
+            font-size: 2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 50px;
+            width: 60px;
+            height: 60px;
+            background-color: $brand;
+            color: #fff;
+        }
+
+        .empty-bg {
+            background-color: #eff3f4;
+            flex: 1;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.center-box-bg {
+    background-image: url('../image/square.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 3rem;
+}
+
+.batch {
+    max-width: 250px;
+    width: 100%;
+
+    &:nth-child(1) {
+        border-right: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc;
+    }
+
+    &:nth-child(2) {
+        border-bottom: 1px solid #cccccc;
+    }
+
+    &.border-0 {
+        border: 0;
+    }
+
+    &.border-b0 {
+        border-bottom: 0;
+    }
+
+    padding: 2rem;
+
+    .icon {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .number {
+        text-align: center;
+        font-size: 4rem;
+
+        color: $black;
+        margin-top: -30px;
+    }
+
+    .title {
+        text-align: center;
+        margin-top: -10px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+
+.site-footer{
+    background-color: #1e293b;
+    padding: 5rem;
+    margin-top: -10px;
+    a{
+        color: #fff;
+    }
+}
