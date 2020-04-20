@@ -300,11 +300,13 @@ $black:#333333;
             margin-bottom: 1rem;
         }
     }
-
+ 
     .icon-panel {
         display: flex;
+        
         margin-top: -67px;
 
+        position:relative; 
         .icon {
             font-size: 2em;
             display: flex;
@@ -392,5 +394,12 @@ a {
     margin-top: -10px;
     a{
         color: #fff;
+    }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    // IE10+ CSS here
+    .card .icon-panel {
+        margin-top: -66px;
     }
 }

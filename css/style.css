@@ -310,6 +310,7 @@
   display: -ms-flexbox;
   display: flex;
   margin-top: -67px;
+  position: relative;
 }
 
 .card .icon-panel .icon {
@@ -409,5 +410,11 @@ a {
 
 .site-footer a {
   color: #fff;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .card .icon-panel {
+    margin-top: -66px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
