@@ -41,6 +41,27 @@ $black:#333333;
     height: 100vh;
     width: 100%;
     background-size: cover;
+
+    .sliderText {
+
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        color: #fff;
+        /*margin: 0 4rem;*/
+        width: 100%;
+        min-height: 500px;
+
+        .img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+    }
 }
 
 .sliderText .title::before {
@@ -65,13 +86,12 @@ $black:#333333;
 
 }
 
-.slider .sliderText {
-    top: 20%;
-    position: absolute;
-    color: #fff;
-    margin: 0 4rem;
-    width: 40%;
-    min-height: 500px;
+.slider .sliderText .title, 
+.slider .sliderText .textwidget,
+.slider .sliderText .indicator {
+    max-width: 700px;
+    padding: 1rem;
+    margin: 0 auto;
 }
 
 .slider .sliderText .title {
@@ -80,7 +100,7 @@ $black:#333333;
     position: relative;
     line-height: 4rem;
     z-index: 1;
-
+    margin-top: 5%;
 }
 
 .slider .sliderText .textwidget {
@@ -88,8 +108,6 @@ $black:#333333;
     z-index: 1;
     font-size: 1.5625rem
 }
-
-
 
 .indicator .box {
     width: 10px;
@@ -101,7 +119,8 @@ $black:#333333;
 .indicator {
     display: flex;
     position: absolute;
-    bottom: 0px;
+    bottom: 25%;
+    left:50%;
 }
 
 .indicator .box.selected {
@@ -267,10 +286,12 @@ $black:#333333;
 .space {
     height: 5rem;
 }
-.text-center{
+
+.text-center {
     text-align: center;
     margin: 0 auto;
 }
+
 .gap-0 .col {
     margin-right: 0rem;
 }
@@ -302,13 +323,14 @@ $black:#333333;
             margin-bottom: 1rem;
         }
     }
- 
+
     .icon-panel {
         display: flex;
-        
+
         margin-top: -67px;
 
-        position:relative; 
+        position: relative;
+
         .icon {
             font-size: 2em;
             display: flex;
@@ -390,16 +412,31 @@ a {
     }
 }
 
-.site-footer{
+.site-footer {
     background-color: #1e293b;
     padding: 5rem;
     margin-top: -10px;
-    a{
+
+    a {
         color: #fff;
     }
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+.site-header {
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff', endColorstr='#00ffffff', GradientType=0);
+    /* IE6-9 */
+
+}
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+
     // IE10+ CSS here
     .card .icon-panel {
         margin-top: -66px;

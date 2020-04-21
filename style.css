@@ -678,7 +678,7 @@ a:active {
 .main-navigation a {
 	display: block;
 	text-decoration: none;
-	color: #fff;
+	color: #000;
 	line-height: 60px;
 	
 }
@@ -836,7 +836,7 @@ a:active {
 }
 
 .site-branding img {
-    width: 200px;
+    width: 300px;
     padding: 5px 15px;
     /* background-color: #676767; */
 }

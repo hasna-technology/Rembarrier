@@ -40,6 +40,26 @@
   background-size: cover;
 }
 
+.slider .sliderText {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  color: #fff;
+  /*margin: 0 4rem;*/
+  width: 100%;
+  min-height: 500px;
+}
+
+.slider .sliderText .img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
 .sliderText .title::before {
   background-color: #e7ab3d;
   content: " ";
@@ -61,13 +81,12 @@
   z-index: -1;
 }
 
-.slider .sliderText {
-  top: 20%;
-  position: absolute;
-  color: #fff;
-  margin: 0 4rem;
-  width: 40%;
-  min-height: 500px;
+.slider .sliderText .title,
+.slider .sliderText .textwidget,
+.slider .sliderText .indicator {
+  max-width: 700px;
+  padding: 1rem;
+  margin: 0 auto;
 }
 
 .slider .sliderText .title {
@@ -76,6 +95,7 @@
   position: relative;
   line-height: 4rem;
   z-index: 1;
+  margin-top: 5%;
 }
 
 .slider .sliderText .textwidget {
@@ -96,7 +116,8 @@
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  bottom: 0px;
+  bottom: 25%;
+  left: 50%;
 }
 
 .indicator .box.selected {
@@ -412,6 +433,16 @@ a {
 
 .site-footer a {
   color: #fff;
+}
+
+.site-header {
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff', endColorstr='#00ffffff', GradientType=0);
+  /* IE6-9 */
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
