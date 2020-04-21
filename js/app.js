@@ -41,7 +41,7 @@ function slider($) {
     }, 750);
 
     $(".sliderText .img").each(function () {
-        var src = "../"+$(this).find("img").attr("src");
+        var src = $(this).find("img").attr("src");
         console.log(src, $(this));
         $(this).css("background-image", "url('"+src+"')");
         $(this).find("img").hide();
