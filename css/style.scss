@@ -60,6 +60,7 @@ $black:#333333;
             bottom: 0;
             right: 0;
             z-index: -1;
+            background-size: cover;
         }
     }
 }
@@ -119,7 +120,7 @@ $black:#333333;
 .indicator {
     display: flex;
     position: absolute;
-    bottom: 25%;
+    /*top: 25%;*/
     left:50%;
 }
 
@@ -133,7 +134,19 @@ $black:#333333;
     margin: 0 auto;
 }
 
-
+.site-header{
+    &.fixed_menu{
+        position: fixed;
+        left: 0px;
+        right:0px;
+        top: 0px;
+        z-index: 5;
+        background-color: #fff;
+        height: 64px;
+        box-shadow: 0 0 5px #0000005c;
+    }
+    transition: background-color 0.5s ease;
+}
 
 .main-navigation a:hover:before,
 .main-navigation .current-menu-item a:before {

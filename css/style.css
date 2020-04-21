@@ -58,6 +58,7 @@
   bottom: 0;
   right: 0;
   z-index: -1;
+  background-size: cover;
 }
 
 .sliderText .title::before {
@@ -116,7 +117,7 @@
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  bottom: 25%;
+  /*top: 25%;*/
   left: 50%;
 }
 
@@ -127,6 +128,23 @@
 .content {
   max-width: 1260px;
   margin: 0 auto;
+}
+
+.site-header {
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
+.site-header.fixed_menu {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  z-index: 5;
+  background-color: #fff;
+  height: 64px;
+  -webkit-box-shadow: 0 0 5px #0000005c;
+          box-shadow: 0 0 5px #0000005c;
 }
 
 .main-navigation a:hover:before,

@@ -1,5 +1,14 @@
 jQuery(document).ready(function ($) {
     slider($);
+    window.onscroll = function () {
+        console.log(window.pageYOffset);
+        if (window.pageYOffset >= 200) {
+            $(".site-header").addClass("fixed_menu")
+          } else {
+            $(".site-header").removeClass("fixed_menu")
+          }
+    };
+    //main-navigation
 })
 
 function slider($) {
@@ -9,7 +18,8 @@ function slider($) {
         $(".slider-panel .indicator").append("<div class='box'></div>");
     })
 
-    $(".slider .indicator").css("left", "calc(50% - " + ($(".slider .indicator").width()/2) + "px)")
+    $(".slider .indicator").css("left", "calc(50% - " + ($(".slider .indicator").width() / 2) + "px)")
+    
 
     $(".sliderText .title").hide();
     $(".sliderText .textwidget").hide();
@@ -29,6 +39,13 @@ function slider($) {
         opacity: 1,
         top: -50
     }, 750);
+
+    $(".sliderText .img").each(function () {
+        var src = "../"+$(this).find("img").attr("src");
+        console.log(src, $(this));
+        $(this).css("background-image", "url('"+src+"')");
+        $(this).find("img").hide();
+    });
 
     $(".sliderText .img").eq(num).show();
     $(".sliderText .img").eq(num).animate({
@@ -56,7 +73,7 @@ function slider($) {
         var temp_n = 0;
         $(".sliderText .img").each(function () {
             temp_n++;
-            if(temp_n != num){
+            if (temp_n != num) {
                 $(this).animate({
                     opacity: 0
                 }, 500, function () {
