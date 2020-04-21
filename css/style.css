@@ -37,6 +37,7 @@
   position: relative;
   height: 100vh;
   width: 100%;
+  background-size: cover;
 }
 
 .sliderText .title::before {
@@ -183,6 +184,7 @@
   font-size: 1rem;
   margin-bottom: 1.5em;
   line-height: 1.4;
+  letter-spacing: -1px;
   text-transform: uppercase;
 }
 

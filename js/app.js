@@ -27,7 +27,7 @@ function slider($){
     $(".slider-panel .indicator .box").eq(num).addClass("selected");
     setInterval(function(){
         num = num + 1;
-        num = num % $(".title").length;
+        num = num % $(".sliderText .title").length;
 
         $(".sliderText .title").animate({
             opacity: 0,
@@ -43,6 +43,7 @@ function slider($){
         });
         $(".slider-panel .indicator .box").removeClass("selected");
         $(".slider-panel .indicator .box").eq(num).addClass("selected");
+        console.log(num)
         setTimeout(function(){
             $(".sliderText .title").eq(num).show();
             $(".sliderText .title").eq(num).animate({
