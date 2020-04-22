@@ -6,8 +6,16 @@
   background-color: #ffffff;
 }
 
+.bg-dark {
+  background-color: #333333;
+}
+
 .text-brand {
   color: #e7ab3d;
+}
+
+.full-height {
+  height: 100%;
 }
 
 /*----Custom----*/
@@ -131,24 +139,24 @@
 }
 
 .site-header {
-  -webkit-transition: background-color 0.5s ease;
-  transition: background-color 0.5s ease;
-}
-
-.site-header.fixed_menu {
   position: fixed;
   left: 0px;
   right: 0px;
   top: 0px;
   z-index: 5;
-  background-color: #fff;
   height: 64px;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
+.site-header.fixed_menu {
+  background-color: #fff;
   -webkit-box-shadow: 0 0 5px #0000005c;
           box-shadow: 0 0 5px #0000005c;
 }
 
-.main-navigation a:hover:before,
-.main-navigation .current-menu-item a:before {
+.main-navigation #primary-menu > li > a:hover:before,
+.main-navigation .current-menu-item > a:before {
   width: 100%;
   opacity: 1;
   -webkit-transform: scaleX(1);
@@ -171,6 +179,18 @@
   transform: scaleX(0);
   -webkit-transform-origin: left;
   transform-origin: left;
+}
+
+.main-navigation .sub-menu li {
+  width: 230px;
+}
+
+.main-navigation .sub-menu > li > a {
+  padding-left: 20px;
+}
+
+.main-navigation .sub-menu > li > a:hover {
+  background-color: #eee;
 }
 
 .brand-bg {
@@ -227,11 +247,23 @@
   text-transform: uppercase;
 }
 
+.left-img {
+  margin-top: -120px;
+  position: relative;
+  z-index: 1;
+}
+
 .right-img {
   margin-left: -120px;
   margin-top: -120px;
   position: relative;
   z-index: 1;
+}
+
+.right-text {
+  margin-left: -120px;
+  position: relative;
+  z-index: 2;
 }
 
 .left-bottom-gap {
@@ -276,6 +308,11 @@
   padding-right: 5rem;
 }
 
+.row .top-p2 {
+  padding-top: 5rem;
+  padding-left: 5rem;
+}
+
 .row .top-p1 {
   padding-top: 12rem;
   padding-right: 12rem;
@@ -306,8 +343,20 @@
   margin-top: 3.75rem;
 }
 
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  background-color: #e7ab3d;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 1.4em 1.7em;
+  border: 0;
+  border-radius: 0;
+}
+
 .space {
-  height: 5rem;
+  height: 160px;
 }
 
 .text-center {
@@ -327,6 +376,41 @@
   color: #333333;
 }
 
+.client_slider {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+}
+
+.client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.client .item {
+  margin-right: 20px;
+  margin-bottom: 1rem;
+  padding: 1rem 40px;
+  background-color: #eff3f4;
+}
+
+.card {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .card .img img {
   width: 100%;
 }
@@ -334,6 +418,9 @@
 .card .body {
   background-color: #eff3f4;
   padding: 2rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .card .body .title {
@@ -447,6 +534,8 @@ a {
   background-color: #1e293b;
   padding: 5rem;
   margin-top: -10px;
+  position: relative;
+  z-index: 100;
 }
 
 .site-footer a {
@@ -467,5 +556,86 @@ a {
   .card .icon-panel {
     margin-top: -66px;
   }
+}
+
+.topbanner {
+  min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../image/hero_services1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.topbanner .title {
+  font-size: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.center-park {
+  padding: 5rem 4rem;
+  padding-left: 180px;
+}
+
+.center-park .panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.center-park .panel .icon {
+  font-size: 3rem;
+  padding: 0 2rem;
+  color: #e7ab3d;
+}
+
+.center-park .panel .title {
+  color: #e7ab3d;
+  font-size: 1.5rem;
+}
+
+.compare-card {
+  height: 100%;
+  background-color: #eff3f4;
+  padding: 1.5rem;
+}
+
+.compare-card .icon {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.compare-card .title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.compare-card .title a {
+  color: #333333;
+  font-size: 1.5rem;
+}
+
+.compare-card .content ul {
+  margin: 0;
+}
+
+.pr-1 {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.parnter {
+  padding-left: 10rem;
 }
 /*# sourceMappingURL=style.css.map */

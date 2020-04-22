@@ -1,15 +1,61 @@
 jQuery(document).ready(function ($) {
     slider($);
     window.onscroll = function () {
-        console.log(window.pageYOffset);
+        //console.log(window.pageYOffset);
         if (window.pageYOffset >= 200) {
             $(".site-header").addClass("fixed_menu")
-          } else {
+        } else {
             $(".site-header").removeClass("fixed_menu")
-          }
+        }
     };
     //main-navigation
+
+    client_slider($);
+
 })
+
+function client_slider($) {
+   
+    var img_cnt = 0;
+    var img_len = $(".client_slider .item").length;
+    $(".client_slider").hide();
+    var imageLoaded = function () {
+        // Run onload code.
+        img_cnt++;
+        if(img_len == img_cnt){
+            $(".client_slider").show();
+            slide_image();
+        }
+    }
+
+    $(".client_slider .item").each(function () {
+        var tmpImg = new Image();
+        tmpImg.onload = imageLoaded;
+        tmpImg.src = $(this).find("img").attr('src');
+    })
+}
+
+function slide_image(){
+    var width = 0;
+    var width_arr = [];
+       
+    $(".client_slider .item").each(function () {
+        width_arr.push(width);
+        width += $(this).width() + 100;
+      
+    })
+    $(".client_slider .client").width(width);
+    var num = 0;
+    setInterval(function () {
+
+        $(".client_slider .client").animate({
+            left: -width_arr[num] + "px",
+        }, 500);
+        num++;
+        num = num % ($(".client_slider .item").length - 3);
+        console.log(num);
+    }, 3000)
+}
 
 function slider($) {
     var num = 0;
@@ -19,7 +65,7 @@ function slider($) {
     })
 
     $(".slider .indicator").css("left", "calc(50% - " + ($(".slider .indicator").width() / 2) + "px)")
-    
+
 
     $(".sliderText .title").hide();
     $(".sliderText .textwidget").hide();
@@ -43,7 +89,7 @@ function slider($) {
     $(".sliderText .img").each(function () {
         var src = $(this).find("img").attr("src");
         console.log(src, $(this));
-        $(this).css("background-image", "url('"+src+"')");
+        $(this).css("background-image", "url('" + src + "')");
         $(this).find("img").hide();
     });
 

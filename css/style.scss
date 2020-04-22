@@ -9,8 +9,16 @@ $black:#333333;
     background-color: #ffffff;
 }
 
+.bg-dark {
+    background-color: $black;
+}
+
 .text-brand {
     color: $brand;
+}
+
+.full-height {
+    height: 100%;
 }
 
 /*----Custom----*/
@@ -87,7 +95,7 @@ $black:#333333;
 
 }
 
-.slider .sliderText .title, 
+.slider .sliderText .title,
 .slider .sliderText .textwidget,
 .slider .sliderText .indicator {
     max-width: 700px;
@@ -121,7 +129,7 @@ $black:#333333;
     display: flex;
     position: absolute;
     top: 60%;
-    left:50%;
+    left: 50%;
 }
 
 .indicator .box.selected {
@@ -134,22 +142,23 @@ $black:#333333;
     margin: 0 auto;
 }
 
-.site-header{
-    &.fixed_menu{
-        position: fixed;
+.site-header {
+    position: fixed;
         left: 0px;
-        right:0px;
+        right: 0px;
         top: 0px;
         z-index: 5;
-        background-color: #fff;
         height: 64px;
+    &.fixed_menu {
+        background-color: #fff;
         box-shadow: 0 0 5px #0000005c;
     }
+
     transition: background-color 0.5s ease;
 }
 
-.main-navigation a:hover:before,
-.main-navigation .current-menu-item a:before {
+.main-navigation #primary-menu>li>a:hover:before,
+.main-navigation .current-menu-item>a:before {
     width: 100%;
     opacity: 1;
     transform: scaleX(1);
@@ -178,6 +187,17 @@ $black:#333333;
     transform-origin: left;
 }
 
+.main-navigation .sub-menu li {
+    width: 230px;
+}
+
+.main-navigation .sub-menu>li>a {
+    padding-left: 20px;
+}
+
+.main-navigation .sub-menu>li>a:hover {
+    background-color: #eee;
+}
 
 .brand-bg {
     background-color: $brand;
@@ -225,11 +245,23 @@ $black:#333333;
     text-transform: uppercase;
 }
 
+.left-img {
+    margin-top: -120px;
+    position: relative;
+    z-index: 1;
+}
+
 .right-img {
     margin-left: -120px;
     margin-top: -120px;
     position: relative;
     z-index: 1;
+}
+
+.right-text {
+    margin-left: -120px;
+    position: relative;
+    z-index: 2;
 }
 
 .left-bottom-gap {
@@ -265,6 +297,12 @@ $black:#333333;
         padding-right: 5rem;
     }
 
+
+    .top-p2 {
+        padding-top: 5rem;
+        padding-left: 5rem;
+    }
+
     .top-p1 {
         padding-top: 12rem;
         padding-right: 12rem;
@@ -296,8 +334,20 @@ $black:#333333;
     }
 }
 
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    background-color: $brand;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1.4em 1.7em;
+    border: 0;
+    border-radius: 0;
+}
+
 .space {
-    height: 5rem;
+    height: 160px;
 }
 
 .text-center {
@@ -316,8 +366,31 @@ $black:#333333;
 .text-black {
     color: $black;
 }
+.client_slider{
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+}
+.client {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    position: relative;
+    //width: 3000px;
+    .item {
+        margin-right: 20px;
+        margin-bottom: 1rem;
+        padding: 1rem 40px;
+        background-color: #eff3f4;
+    }
+}
 
 .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
     .img img {
         width: 100%
     }
@@ -325,6 +398,7 @@ $black:#333333;
     .body {
         background-color: #eff3f4;
         padding: 2rem;
+        flex: 1;
 
         .title {
             a {
@@ -429,7 +503,8 @@ a {
     background-color: #1e293b;
     padding: 5rem;
     margin-top: -10px;
-
+    position: relative;
+    z-index: 100;
     a {
         color: #fff;
     }
@@ -454,4 +529,78 @@ a {
     .card .icon-panel {
         margin-top: -66px;
     }
+}
+
+.topbanner {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../image/hero_services1.jpg');
+    background-size: cover;
+    background-position: center;
+
+    .title {
+        font-size: 3rem;
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 3rem;
+    }
+}
+
+.center-park {
+    padding: 5rem 4rem;
+    padding-left: 180px;
+
+    .panel {
+        display: flex;
+        color: #fff;
+        margin-bottom: 2rem;
+
+        .icon {
+            font-size: 3rem;
+            padding: 0 2rem;
+            color: $brand;
+        }
+
+        .title {
+            color: $brand;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.compare-card {
+    height: 100%;
+    background-color: #eff3f4;
+    padding: 1.5rem;
+
+    .icon {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .title {
+        text-align: center;
+        margin-bottom: 2rem;
+
+        a {
+            color: $black;
+            font-size: 1.5rem;
+
+        }
+    }
+
+    .content ul {
+        margin: 0;
+    }
+}
+
+.pr-1 {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.parnter {
+    padding-left: 10rem;
 }
