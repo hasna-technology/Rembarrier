@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body ng-app="myApp" ng-controller="myCtrl">
 
     <div id="page" class="site">
         <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
@@ -177,8 +177,8 @@
                                     City, Country<br>
                                     (+00) 0000 000 000<br>
                                     office@company.com</p>
-                                
-                                
+
+
                             </div>
                         </div>
                     </div>
@@ -204,13 +204,12 @@
     </div><!-- #content -->
 
     <footer id="colophon" class="site-footer">
-        <div class="site-info">
-            Developed by : <a href="http://hasnatech.com/" target="_blank">Hasna Technology</a> </div>
+        <ht-footer></ht-footer>
         <!-- .site-info -->
     </footer><!-- #colophon -->
     </div>
 
-
+    <script src="js/angular.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="plugin/bootstrap/js/bootstrap.js"></script>
     <script src="js/app.js"></script>

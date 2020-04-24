@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-
+<body ng-app="myApp" ng-controller="myCtrl">
     <div id="page" class="site">
         <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
@@ -97,23 +96,26 @@
                                     <div class="img">
                                         <img src="image/hero_home_01.jpg" alt="">
                                     </div>
-                                    <div class="title">Leadership Search & development  </div>
+                                    <div class="title">Leadership Search & development </div>
                                     <div class="textwidget">
-                                        <p>Global research data base, 360deg feedback , culture fitment , succession planning , sounding board</p>
+                                        <p>Global research data base, 360deg feedback , culture fitment , succession
+                                            planning , sounding board</p>
                                     </div>
                                     <div class="img">
                                         <img src="image/hero_home_02.jpg" alt="">
                                     </div>
                                     <div class="title">Mergers & acquisitions</div>
                                     <div class="textwidget">
-                                        <p>M&A advisory , corporate development , financial advisory , post merger integration</p>
+                                        <p>M&A advisory , corporate development , financial advisory , post merger
+                                            integration</p>
                                     </div>
                                     <div class="img">
                                         <img src="image/hero_home_03.jpg" alt="">
                                     </div>
-                                    <div class="title">Digital workplace   </div>
+                                    <div class="title">Digital workplace </div>
                                     <div class="textwidget">
-                                        <p>Real time employees communication, engagement platform , performance improvement, digital transformation</p>
+                                        <p>Real time employees communication, engagement platform , performance
+                                            improvement, digital transformation</p>
                                     </div>
                                     <div class="img">
                                         <img src="image/hero_home_04.jpg" alt="">
@@ -216,7 +218,8 @@
                                         </a>
                                     </div>
                                     <div class="content">
-                                        Global research data base, 360deg feedback , culture fitment , succession planning , sounding board
+                                        Global research data base, 360deg feedback , culture fitment , succession
+                                        planning , sounding board
                                     </div>
                                 </div>
                             </div>
@@ -241,7 +244,8 @@
                                         </a>
                                     </div>
                                     <div class="content">
-                                        Real time employees communication, engagement platform , performance improvement, digital transformation
+                                        Real time employees communication, engagement platform , performance
+                                        improvement, digital transformation
                                     </div>
                                 </div>
                             </div>
@@ -266,7 +270,8 @@
                                         </a>
                                     </div>
                                     <div class="content">
-                                        M&A advisory , corporate development , financial advisory , post merger integration
+                                        M&A advisory , corporate development , financial advisory , post merger
+                                        integration
                                     </div>
                                 </div>
                             </div>
@@ -489,9 +494,9 @@
 
 
 
-        <div class="section">
+        <!-- <div class="section">
             <img src="image/contact.jpg" alt="">
-        </div>
+        </div> -->
 
         <!-- End Content HTML -->
 
@@ -499,13 +504,12 @@
     </div><!-- #content -->
 
     <footer id="colophon" class="site-footer">
-        <div class="site-info">
-            Developed by : <a href="http://hasnatech.com/" target="_blank">Hasna Technology</a> </div>
+        <ht-footer></ht-footer>
         <!-- .site-info -->
     </footer><!-- #colophon -->
     </div>
 
-
+    <script src="js/angular.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="plugin/bootstrap/js/bootstrap.js"></script>
     <script src="js/app.js"></script>

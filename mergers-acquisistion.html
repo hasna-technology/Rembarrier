@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="plugin/fonts/css/pe-icon-7-stroke.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body>
+<body ng-app="myApp" ng-controller="myCtrl">
 
     <div id="page" class="site">
         <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
@@ -86,7 +85,7 @@
             <h1 class="entry-title">Home</h1>	</header> .entry-header -->
                         <div class="topbanner">
                             <div class="title">
-                                    mergers acquisistion
+                                Mergers & Acquisistion
                             </div>
                         </div>
 
@@ -98,25 +97,144 @@
 
             <!-- Content HTML -->
 
-           
+            <div class="section top-25">
+                <div class="row gap-0">
+                    <div class="col left-img">
+                        <div class="img1">
+                            <img src="image/card_04.jpg" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col right-text white-bg">
+                        <div class="">
+                            <div class="icon-square brand-bg icon-left">
+                                <i class="pe-7s-like2"></i>
+                            </div>
+                            <div class="inner-content top-p2 ">
+                                <div class="main-title">
+                                    Mergers &
+                                    Acquisistion
+                                </div>
+                                <div class="content-h1">
+                                    Some title goes here
+                                </div>
+                                <p>
+                                    <ul>
+                                        <li>Corporate development</li>
+                                        <li> Identify opportunities</li>
+                                        <li> Value enhancement</li>
+                                        <li> Financial advisory</li>
+                                        <li> Post merger integration</li>
+                                        <li> homogenize culture </li>
+                                    </ul>
 
-  
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="space"></div>
+
+            <div class="section">
+
+                <div class="content">
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="inner-content">
+                                <div class="left-box-bg">
+                                    <div class="content-h1">
+                                        Full Cycle M&A
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <ul>
+                            <li>How are we different ?</li>
+                            <li>We focus on overall corporate development</li>
+                            <li>Identify the core strength of target and build solution around</li>
+                            <li>Technology mapping and retrofit solution</li>
+                            <li>High degree of governance and knowledge of local regulations</li>
+                            <li>Innovative financial advisory</li>
+                            <li>Cultural integration of the entities using SLT modelling</li>
+                            <li>post merger integration</li>
+                            <li>References of successful integrations </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="space"></div>
+            </div>
+
+            <div class="section">
+
+                <div class="content">
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="text-center inner-content">
+                                <div class="center-box-bg">
+                                    <div class="content-h1">
+                                        We partner with top brands
+                                    </div>
+                                    <div class="space"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-3">
+                            <div class="card shadow">
+                                <div class="img">
+                                    <img src="image/box_beekeeper.png" alt="">
+                                </div>
+                                <div class="icon-panel">
+                                    <div class="icon">
+                                        <i class="pe-7s-display1"></i>
+                                    </div>
+                                    <div class="empty-bg">
+                                        &nbsp;
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <div class="title">
+                                        <a href="#">
+                                            Beekeeper
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        Reach every employee and deliver critical updates across departments, locations,
+                                        and languages with one easy-to-use mobile platform.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space"></div>
+            </div>
         </div>
-
-
         <!-- End Content HTML -->
 
 
     </div><!-- #content -->
 
     <footer id="colophon" class="site-footer">
-        <div class="site-info">
-            Developed by : <a href="http://hasnatech.com/" target="_blank">Hasna Technology</a> </div>
+        <ht-footer></ht-footer>
         <!-- .site-info -->
     </footer><!-- #colophon -->
-    </div>
 
 
+    <script src="js/angular.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="plugin/bootstrap/js/bootstrap.js"></script>
     <script src="js/app.js"></script>

@@ -1,3 +1,14 @@
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function ($scope) {
+});
+
+app.directive("htFooter", function () {
+    return {
+        templateUrl: "footer.html"
+    };
+});
+
+
 jQuery(document).ready(function ($) {
     slider($);
     window.onscroll = function () {
@@ -15,14 +26,14 @@ jQuery(document).ready(function ($) {
 })
 
 function client_slider($) {
-   
+
     var img_cnt = 0;
     var img_len = $(".client_slider .item").length;
     $(".client_slider").hide();
     var imageLoaded = function () {
         // Run onload code.
         img_cnt++;
-        if(img_len == img_cnt){
+        if (img_len == img_cnt) {
             $(".client_slider").show();
             slide_image();
         }
@@ -35,14 +46,14 @@ function client_slider($) {
     })
 }
 
-function slide_image(){
+function slide_image() {
     var width = 0;
     var width_arr = [];
-       
+
     $(".client_slider .item").each(function () {
         width_arr.push(width);
         width += $(this).width() + 100;
-      
+
     })
     $(".client_slider .client").width(width);
     var num = 0;

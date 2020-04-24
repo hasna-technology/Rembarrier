@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body ng-app="myApp" ng-controller="myCtrl">
 
     <div id="page" class="site">
         <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
@@ -86,7 +86,7 @@
             <h1 class="entry-title">Home</h1>	</header> .entry-header -->
                         <div class="topbanner">
                             <div class="title">
-                                Leadership Search
+                                LEADERSHIP SEARCH
                             </div>
                         </div>
 
@@ -98,25 +98,65 @@
 
             <!-- Content HTML -->
 
-           
+            <div class="section top-25">
+                <div class="row gap-0">
+                    <div class="col left-img">
+                        <div class="img1">
+                            <img src="image/card_08.png" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col right-text white-bg">
+                        <div class="">
+                            <div class="icon-square brand-bg icon-left">
+                                <i class="pe-7s-id"></i>
+                            </div>
+                            <div class="inner-content top-p2 ">
+                                <div class="main-title">
+                                    Leadership Search
+                                </div>
+                                <div class="content-h1">
+                                    Leadership Search & fitment excellence
+                                </div>
+                                <p>
+                                    <ul>
+                                        <li>Critical evaluation of position</li>
+                                        <li>Domain expertise of consultants</li>
+                                        <li>International sourcing of candidates</li>
+                                        <li>Referenced through 360 deg feedback</li>
+                                        <li>End to end approach</li>
+                                        <li>Technical and social skills evaluated scientifically through SLT</li>
+                                        <li>Sounding board approach for 6 months</li>
+                                        <li>Senior leadership levels</li>
+                                        <li>Interim management</li>
+                                        <li>Board positions - independent directors</li>
+                                        <li>Identify and nurture internal candidates</li>
+                                        <li>Position evaluations & bench marking</li>
+                                        <li>Advise on competitive compensations & benefits</li>
+                                        <li>Culture fitment</li>
+                                    </ul>
 
-  
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
         </div>
-
-
         <!-- End Content HTML -->
 
 
     </div><!-- #content -->
 
     <footer id="colophon" class="site-footer">
-        <div class="site-info">
-            Developed by : <a href="http://hasnatech.com/" target="_blank">Hasna Technology</a> </div>
+        <ht-footer></ht-footer>
         <!-- .site-info -->
     </footer><!-- #colophon -->
-    </div>
 
 
+    <script src="js/angular.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="plugin/bootstrap/js/bootstrap.js"></script>
     <script src="js/app.js"></script>
