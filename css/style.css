@@ -377,6 +377,10 @@ input[type="submit"] {
   height: 160px;
 }
 
+.half-space {
+  height: 80px;
+}
+
 .text-center {
   text-align: center;
   margin: 0 auto;
@@ -675,10 +679,14 @@ a {
 }
 
 .team_bio {
-  margin-top: 3rem;
+  padding: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.team_bio:nth-child(even) {
+  background-color: #eff3f4;
 }
 
 .team_bio .bio {
@@ -686,5 +694,9 @@ a {
       -ms-flex: 1;
           flex: 1;
   margin-left: 3rem;
+}
+
+.team_bio .bio ul {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

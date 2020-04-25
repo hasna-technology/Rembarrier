@@ -367,7 +367,10 @@ input[type="submit"] {
 .space {
     height: 160px;
 }
-
+.half-space
+{
+    height: 80px;
+}
 .text-center {
     text-align: center;
     margin: 0 auto;
@@ -636,9 +639,16 @@ a {
 }
 
 .team_bio{
-    margin-top: 3rem;
+    padding: 3rem;
     display: flex;
+    &:nth-child(even){
+        background-color: #eff3f4;
+    }
     .bio{
+        ul
+        {
+            margin: 0;
+        }
         flex: 1;
         margin-left: 3rem;
     }
