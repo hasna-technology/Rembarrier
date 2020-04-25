@@ -291,6 +291,14 @@
   text-align: right;
 }
 
+.align-left {
+  text-align: left;
+}
+
+.p-1 {
+  padding-top: 1rem;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -453,6 +461,7 @@ input[type="submit"] {
   font-weight: bold;
   font-size: 1.2rem;
   color: #333333;
+  text-decoration: none;
 }
 
 .card .icon-panel {
@@ -489,7 +498,8 @@ input[type="submit"] {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
+  color: #e7ab3d;
 }
 
 .flex-center {
@@ -658,6 +668,7 @@ a {
 .compare-card .title a {
   color: #333333;
   font-size: 1.5rem;
+  text-decoration: none;
 }
 
 .compare-card .content ul {
