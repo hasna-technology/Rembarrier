@@ -316,6 +316,7 @@
 
 .row .col-3 {
   width: 33%;
+  margin-right: 2rem;
 }
 
 .row .col {
@@ -389,6 +390,10 @@ input[type="submit"] {
   height: 80px;
 }
 
+.space-10 {
+  height: 2rem;
+}
+
 .text-center {
   text-align: center;
   margin: 0 auto;
@@ -430,6 +435,15 @@ input[type="submit"] {
   background-color: #eff3f4;
 }
 
+.dark .card .body {
+  background-color: #333333;
+  color: #b7b7b7;
+}
+
+.dark .card .body .title {
+  color: #e7ab3d;
+}
+
 .card {
   height: 100%;
   display: -webkit-box;
@@ -454,6 +468,9 @@ input[type="submit"] {
 }
 
 .card .body .title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333333;
   margin-bottom: 1rem;
 }
 
@@ -522,6 +539,10 @@ a {
   padding-bottom: 3rem;
 }
 
+.left-dark-bg {
+  background-image: url("../image/square_dark.png");
+}
+
 .center-box-bg {
   background-image: url("../image/square.svg");
   background-position: top center;
@@ -535,6 +556,10 @@ a {
   padding: 2rem;
 }
 
+.batch.batch-full {
+  max-width: 60%;
+}
+
 .batch:nth-child(1) {
   border-right: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
@@ -542,6 +567,10 @@ a {
 
 .batch:nth-child(2) {
   border-bottom: 1px solid #cccccc;
+}
+
+.batch .desc {
+  text-align: center;
 }
 
 .batch.border-0 {
@@ -590,6 +619,11 @@ a {
 
 .site-footer a:hover {
   color: #ffffff;
+}
+
+.site-footer .title {
+  font-size: 1.2rem;
+  color: #fff;
 }
 
 .site-footer .site-info-dev {
@@ -680,6 +714,10 @@ a {
   margin-bottom: 3rem;
 }
 
+.margin-right {
+  margin-right: 130px;
+}
+
 .parnter {
   padding-left: 10rem;
 }
@@ -709,5 +747,15 @@ a {
 
 .team_bio .bio ul {
   margin: 0;
+}
+
+.social .icon {
+  float: left;
+  margin-right: 1rem;
+}
+
+.social .icon img {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */

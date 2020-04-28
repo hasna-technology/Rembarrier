@@ -20,9 +20,11 @@ $black:#333333;
 .full-height {
     height: 100%;
 }
+
 .full-width {
     width: 100%;
 }
+
 /*----Custom----*/
 .telephone .textwidget {
     display: flex;
@@ -146,21 +148,23 @@ $black:#333333;
 
 .site-header {
     position: fixed;
-        left: 0px;
-        right: 0px;
-        top: 0px;
-        z-index: 5;
-        height: 64px;
-        background-color: #fff;
-        box-shadow: 0 0 5px #0000005c;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 5;
+    height: 64px;
+    background-color: #fff;
+    box-shadow: 0 0 5px #0000005c;
+
     &.fixed_menu {
-      /*
+        /*
        background-color: #fff;
         box-shadow: 0 0 5px #0000005c;*/
     }
 
     transition: background-color 0.5s ease;
 }
+
 .site-header {
     //background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
     /* FF3.6-15 */
@@ -172,6 +176,7 @@ $black:#333333;
     /* IE6-9 */
 
 }
+
 .main-navigation #primary-menu>li>a:hover:before,
 .main-navigation .current-menu-item>a:before {
     width: 100%;
@@ -289,12 +294,15 @@ $black:#333333;
 .align-right {
     text-align: right;
 }
+
 .align-left {
     text-align: left;
 }
-.p-1{
+
+.p-1 {
     padding-top: 1rem;
 }
+
 .row {
     display: flex;
 
@@ -303,9 +311,11 @@ $black:#333333;
         justify-content: flex-end;
     }
 
-    .col-3{
+    .col-3 {
         width: 33%;
+        margin-right: 2rem;
     }
+
     .col {
         flex: 1;
         margin-right: 2rem;
@@ -372,10 +382,16 @@ input[type="submit"] {
 .space {
     height: 160px;
 }
-.half-space
-{
+
+.half-space {
     height: 80px;
 }
+
+.space-10 {
+    height: 2rem;
+}
+
+
 .text-center {
     text-align: center;
     margin: 0 auto;
@@ -392,23 +408,39 @@ input[type="submit"] {
 .text-black {
     color: $black;
 }
-.client_slider{
+
+.client_slider {
     overflow-x: hidden;
     width: 100%;
     max-width: 1200px;
     position: relative;
 }
+
 .client {
     display: flex;
     flex-wrap: wrap;
     margin: 2rem 0;
     position: relative;
+
     //width: 3000px;
     .item {
         margin-right: 20px;
         margin-bottom: 1rem;
         padding: 1rem 40px;
         background-color: #eff3f4;
+    }
+}
+
+.dark {
+    .card {
+        .body {
+            background-color: $black;
+            color: #b7b7b7;
+
+            .title {
+                color: $brand;
+            }
+        }
     }
 }
 
@@ -427,6 +459,10 @@ input[type="submit"] {
         flex: 1;
 
         .title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: $black;
+
             a {
                 font-weight: bold;
                 font-size: 1.2rem;
@@ -467,7 +503,7 @@ input[type="submit"] {
 a {
     text-decoration: underline;
     color: $brand;
-    
+
 }
 
 .flex-center {
@@ -476,6 +512,7 @@ a {
     align-content: center;
 
 }
+
 .left-box-bg {
     background-image: url('../image/square.svg');
     background-position: left center;
@@ -484,6 +521,11 @@ a {
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
+
+.left-dark-bg {
+    background-image: url('../image/square_dark.png');
+}
+
 .center-box-bg {
     background-image: url('../image/square.svg');
     background-position: top center;
@@ -495,6 +537,10 @@ a {
     max-width: 250px;
     width: 100%;
 
+    &.batch-full {
+        max-width: 60%;
+    }
+
     &:nth-child(1) {
         border-right: 1px solid #cccccc;
         border-bottom: 1px solid #cccccc;
@@ -502,6 +548,10 @@ a {
 
     &:nth-child(2) {
         border-bottom: 1px solid #cccccc;
+    }
+
+    .desc {
+        text-align: center;
     }
 
     &.border-0 {
@@ -545,14 +595,22 @@ a {
     position: relative;
     z-index: 100;
     color: #757575;
+
     a {
         color: #757575;
         text-decoration: underline;
-        &:hover{
+
+        &:hover {
             color: #ffffff;
         }
     }
-    .site-info-dev{
+
+    .title {
+        font-size: 1.2rem;
+        color: #fff;
+    }
+
+    .site-info-dev {
         font-size: 80%;
     }
 }
@@ -638,26 +696,44 @@ a {
     margin-bottom: 3rem;
 }
 
+.margin-right {
+    margin-right: 130px;
+}
+
 .parnter {
     padding-left: 10rem;
 }
 
-.shadow{
+.shadow {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.13);
 }
 
-.team_bio{
+.team_bio {
     padding: 3rem;
     display: flex;
-    &:nth-child(even){
+
+    &:nth-child(even) {
         background-color: #eff3f4;
     }
-    .bio{
-        ul
-        {
+
+    .bio {
+        ul {
             margin: 0;
         }
+
         flex: 1;
         margin-left: 3rem;
+    }
+}
+
+.social {
+    .icon {
+        float: left;
+        margin-right: 1rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
 }
