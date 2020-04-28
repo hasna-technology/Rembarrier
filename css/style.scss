@@ -532,7 +532,24 @@ a {
     background-repeat: no-repeat;
     padding-top: 3rem;
 }
-
+.connect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .padding-4{
+        padding-right: 4rem;
+        flex: 1;
+    }
+    .padding-2{
+        padding-right: 4rem;
+    }
+    .img{
+        width: 50%;
+    }
+    .flex{
+        display: flex;
+    }
+}
 .batch {
     max-width: 250px;
     width: 100%;
