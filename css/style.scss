@@ -144,6 +144,12 @@ $black:#333333;
 .content {
     max-width: 1260px;
     margin: 0 auto;
+    &.overlap-content{
+        margin-top: -200px;
+     padding   :    2rem 4rem;
+        position: relative;
+        z-index: 1;
+    }
 }
 
 .site-header {
@@ -606,6 +612,7 @@ a {
     background-color: #1e293b;
     background-image: url('../image/footer_background_02.jpg');
     background-position: top center;
+    font-size: 85%;
     font-weight: 300;
     padding: 5rem;
     margin-top: -10px;
@@ -753,4 +760,11 @@ a {
             height: 100%;
         }
     }
+}
+
+.service-col{
+    margin-left: 7rem;
+}
+.link-col{
+    margin-left: 3rem;
 }

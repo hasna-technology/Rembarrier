@@ -65,7 +65,7 @@ function slide_image() {
         num++;
         num = num % ($(".client_slider .item").length - 3);
         console.log(num);
-    }, 6000)
+    }, 3000)
 }
 
 function slider($) {
@@ -161,5 +161,5 @@ function slider($) {
 
 
         }, 750)
-    }, 5000);
+    }, 8000);
 }
