@@ -65,7 +65,9 @@ $black:#333333;
         }
 
         .textwidget:nth-child(2) {
-            text-align: center;
+            text-align: right;
+            margin-top: -3rem;
+            right: 10px;
         }
 
         position: absolute;

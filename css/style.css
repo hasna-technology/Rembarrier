@@ -73,7 +73,9 @@
 }
 
 .slider .sliderText .textwidget:nth-child(2) {
-  text-align: center;
+  text-align: right;
+  margin-top: -3rem;
+  right: 10px;
 }
 
 .slider .sliderText .img {
