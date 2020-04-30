@@ -21,7 +21,7 @@ jQuery(document).ready(function ($) {
     };
     //main-navigation
 
-    client_slider($);
+    //client_slider($);
 
 })
 
@@ -111,6 +111,7 @@ function slider($) {
 
 
     $(".slider-panel .indicator .box").eq(num).addClass("selected");
+
     setInterval(function () {
         num = num + 1;
         num = num % $(".sliderText .title").length;

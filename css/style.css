@@ -14,6 +14,10 @@
   color: #e7ab3d;
 }
 
+.text-dark {
+  color: #333333;
+}
+
 .full-height {
   height: 100%;
 }
@@ -63,6 +67,15 @@
   min-height: 500px;
 }
 
+.slider .sliderText .title:nth-child(1) {
+  padding-top: 12%;
+  text-align: center;
+}
+
+.slider .sliderText .textwidget:nth-child(2) {
+  text-align: center;
+}
+
 .slider .sliderText .img {
   position: absolute;
   left: 0;
@@ -71,6 +84,10 @@
   right: 0;
   z-index: -1;
   background-size: cover;
+}
+
+.sliderText .title:nth-child(1)::before {
+  display: none;
 }
 
 .sliderText .title::before {
@@ -97,7 +114,7 @@
 .slider .sliderText .title,
 .slider .sliderText .textwidget,
 .slider .sliderText .indicator {
-  max-width: 700px;
+  max-width: 800px;
   padding: 1rem;
   margin: 0 auto;
 }
@@ -437,9 +454,17 @@ input[type="submit"] {
 
 .client .item {
   margin-right: 20px;
-  margin-bottom: 1rem;
-  padding: 1rem 40px;
+  margin-bottom: 1.5rem;
+  padding: 1rem 2rem;
   background-color: #eff3f4;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
 }
 
 .dark .card .body {
@@ -669,6 +694,7 @@ a {
 
 .site-footer .site-info-dev {
   font-size: 80%;
+  text-align: right;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -713,10 +739,18 @@ a {
   margin-bottom: 2rem;
 }
 
+.center-park .panel .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .center-park .panel .icon {
   font-size: 3rem;
   padding: 0 2rem;
   color: #e7ab3d;
+  width: 120px;
+  text-align: center;
 }
 
 .center-park .panel .title {
@@ -733,6 +767,10 @@ a {
 .compare-card .icon {
   font-size: 4rem;
   text-align: center;
+}
+
+.compare-card a {
+  color: #333333;
 }
 
 .compare-card .title {
@@ -801,7 +839,7 @@ a {
 }
 
 .service-col {
-  margin-left: 7rem;
+  margin-left: 14rem;
 }
 
 .link-col {
