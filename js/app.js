@@ -75,7 +75,7 @@ function slider($) {
         $(".slider-panel .indicator").append("<div class='box'></div>");
     })
 
-    $(".slider .indicator").css("left", "calc(50% - " + ($(".slider .indicator").width() / 2) + "px)")
+    $(".slider .indicator").css("left", "calc(50% - " + ( ($(".sliderText .title").length - 1 ) * 10) + "px)")
 
 
     $(".sliderText .title").hide();
